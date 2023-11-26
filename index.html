@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formas</title>
+</head>
+
+<body>
+    <h1>Payment Form</h1>
+    <form class="custom-form">
+        <fieldset>
+            <legend>Step 1: Your Details</legend>
+            <div class="form-group">
+                <label for="fName">Name</label>
+                <input id="fName" name="fName" type="text" value="" placeholder="First and last name" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text" value="" placeholder="example@gmail.com" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="text" value="" placeholder="787 345 3344" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Step 2: Delivery Address</legend>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address"></textarea>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="postCode">Post Code</label>
+                <input id="postCode" name="postCode" type="text" value="" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input id="country" name="county" type="text" value="" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Step 3: Card Details</legend>
+            <div class="card-type">
+                Card Type
+                <br>
+                <br>
+                <label>
+                    <img src="icons/visaLogo.png" alt="" width="20">
+                    visa
+                </label>
+                <input name="creditCard" type="radio">
+                <label>
+                    <img src="icons/amexLogo.png" alt="" width="20">
+                    Amex
+                </label>
+                <input name="creditCard" type="radio">
+                <label>
+                    <img src="icons/masterCardLogo.png" alt="" width="20">
+                    Mastercard
+                </label>
+                <input name="creditCard2" type="radio">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="cardNumber">Card Number</label>
+                <input id="cardNumber" name="cardNumber" type="text" value="" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="secCode">Security Code</label>
+                <input id="secCode" name="secCode" type="password" maxlength="3" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="nameOnCard">Name on Card</label>
+                <input id="nameOnCard" name="nameOnCard" type="text" value="" placeholder="Exact name as on card" required>
+            </div>
+        </fieldset>
+        <div class="buy"><input type="submit" value="BUY IT!"></div>
+    </form>
+</body>
+</html>
