@@ -8,8 +8,9 @@
 </head>
 
 <body>
-    <h1>Payment Form</h1>
+    
     <form class="custom-form">
+        <h1>Payment Form</h1>
         <fieldset>
             <legend>Step 1: Your Details</legend>
             <div class="form-group">
@@ -24,25 +25,46 @@
             <br>
             <div class="form-group">
                 <label for="phone">Phone</label>
-                <input id="phone" name="phone" type="text" value="" placeholder="787 345 3344" required>
+                <input id="phone" name="phone" type="text" value="" placeholder="787 123 4567" required>
             </div>
         </fieldset>
 
         <fieldset>
-            <legend>Step 2: Delivery Address</legend>
+            <legend>Step 2: Travel Information</legend>
             <div class="form-group">
-                <label for="address">Address</label>
-                <textarea id="address" name="address"></textarea>
+                <label for="destination">Destination</label>
+                <select id="destination" name="destination">
+                    <option value="Select your destination">Select Your Destination:</option>
+                    <option value="usa">United States</option>
+                    <option value="japan">Japan</option>
+                    <option value="pRico">Puerto Rico</option>
+                    <option value="germany">Germany</option>
+                    <option value="spain">Spain</option>
+                    <option value="itali">Italy</option>
+                    <option value="france">France</option>
+                    <option value="korea">South Korea</option>
+                    <option value="canada">Canada</option>
+                </select>
             </div>
             <br>
             <div class="form-group">
-                <label for="postCode">Post Code</label>
-                <input id="postCode" name="postCode" type="text" value="" required>
+                <label for="departure">Date of Departure</label>
+                <input id="departure" name="departure" type="date" value="" required>
             </div>
             <br>
             <div class="form-group">
-                <label for="country">Country</label>
-                <input id="country" name="county" type="text" value="" required>
+                <label for="arrival">Date of Arrival</label>
+                <input id="arrival" name="arrival" type="date" value="" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="passenger">Number od Passengers</label>
+                <input id="passenger" name="passenger" type="text" value="" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="reason">Reason for Travel</label>
+                <textarea id="reason" name="reason"></textarea>
             </div>
         </fieldset>
 
@@ -50,23 +72,23 @@
             <legend>Step 3: Card Details</legend>
             <div class="card-type">
                 Card Type
-                <br>
-                <br>
-                <label>
-                    <img src="icons/visaLogo.png" alt="" width="20">
-                    visa
-                </label>
-                <input name="creditCard" type="radio">
-                <label>
-                    <img src="icons/amexLogo.png" alt="" width="20">
-                    Amex
-                </label>
-                <input name="creditCard" type="radio">
-                <label>
-                    <img src="icons/masterCardLogo.png" alt="" width="20">
-                    Mastercard
-                </label>
-                <input name="creditCard2" type="radio">
+                <div class="icons">
+                    <label>
+                        <img src="icons/visaLogo.png" alt="" width="30" height="20">
+                        visa
+                    </label>
+                    <input name="creditCard" type="radio">
+                    <label>
+                        <img src="icons/amexLogo.png" alt="" width="30" height="20">
+                        Amex
+                    </label>
+                    <input name="creditCard" type="radio">
+                    <label>
+                        <img src="icons/masterCardLogo.png" alt="" width="25" height="20">
+                        Mastercard
+                    </label>
+                    <input name="creditCard2" type="radio">
+                </div>
             </div>
             <br>
             <div class="form-group">
@@ -77,6 +99,11 @@
             <div class="form-group">
                 <label for="secCode">Security Code</label>
                 <input id="secCode" name="secCode" type="password" maxlength="3" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="expirationDate">Expiration Date</label>
+                <input id="expirationDate" name="expirationDate" type="date" required>
             </div>
             <br>
             <div class="form-group">
