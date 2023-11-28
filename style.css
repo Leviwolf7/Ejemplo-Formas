@@ -5,7 +5,7 @@ body {
     align-items: center;
     background-color: #f0f0f0;
     color: goldenrod;
-    background-image: url(background.jpg);
+    background-image: url(icons/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -19,7 +19,7 @@ h1 {
     width: 100%;
     max-width: 375px;
     margin: 0 auto;
-    background-color: #173d83d4;
+    background-color: #173d83fe;
     border-radius: 15px;
     margin-right: 200pt;
 }
